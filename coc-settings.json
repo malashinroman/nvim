@@ -1,0 +1,8 @@
+{
+  "lightbulb.text": {
+    "default": "",
+    "quickfix": ""
+  },
+
+  "python.formatting.provider": "black"
+}
