@@ -1,8 +1,9 @@
 " set maptimeout 5
+set title
 set autoindent              " indent a new line the same amount as the line just typed
 set background=dark       " set background to dark:
 set cc=80                  " set an 80 column border for good coding style
-set encoding=utf-8                           
+" set encoding=utf-7        " set encoding to utf-7:
 set expandtab               " converts tabs to white space
 set hlsearch                " highlight search 
 set ignorecase              " case insensitive 
@@ -26,7 +27,8 @@ set wildmode=longest,list   " get bash-like tab completions
 
 filetype plugin indent on   "allow auto-indenting depending on file type
 syntax on                   " syntax highlighting
-set clipboard=unnamedplus   " using system clipboard
+set clipboard+=unnamedplus
+" set clipboard=unnamedplus   " using system clipboard
 let mapleader = " "
 nmap <leader>w :w!<cr>
 nmap <leader>qq :BD<cr>
@@ -83,7 +85,6 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
              \ }
  Plug 'puremourning/vimspector'
  Plug 'qpkorr/vim-bufkill'
- Plug 'ryanoasis/vim-devicons'
  Plug 'scrooloose/nerdtree'
  Plug 'sickill/vim-monokai'
  Plug 'tmhedberg/SimpylFold'
@@ -91,9 +92,10 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
  Plug 'vim-airline/vim-airline'
  Plug 'voldikss/vim-floaterm'
  Plug 'wookayin/fzf-ripgrep.vim'
+ " Plug 'ryanoasis/vim-devicons'
  call plug#end()
 
-colorscheme industry" set color scheme to indusry:
+ " set guifont=DroidSansMono\ Nerd\ Font\ 11
 
 " let g:highlightedyank_highlight_duration = 1000
 let g:floaterm_keymap_toggle = '<leader>t'
@@ -176,6 +178,23 @@ nmap <leader>rn <Plug>(coc-rename)
 "------------
 "------------FROM coc <<end
 
+" highlight DiagnosticWarn ctermfg=Red  guifg=#ff0000
+" highlight DiagnosticError ctermfg=Red  guifg=#ff0000
+colorscheme industry" set color scheme to indusry:
+
+" highlight CocWarningSign guifg=#000000
+" highlight CocErrorSign guifg=#000000
+
+" highlight CocErrorSign guifg=#d1666a
+" highlight CocWarningSign guifg=#d1cd66
+" highlight CocInfoSign guibg=#353b45
+" highlight CocHintSign guifg=#f1ed86
+" highlight CocHintSign guifg=#f1ed86
+highlight NormalFloat ctermfg=0 ctermbg=7 guibg=White
+
+" highlight CocWarningSign guifg=#d1cd66
+" highlight CocWarningSign guifg=#d1cd66
+" highlight CocWarningSign guifg=#d1cd66
 
 "Vim inspector settings
 "let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
