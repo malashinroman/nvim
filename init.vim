@@ -104,7 +104,8 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
  Plug 'kyazdani42/nvim-web-devicons'
  Plug 'PhilRunninger/nerdtree-visual-selection'
- " Plug 'ryanoasis/vim-devicons'
+ Plug 'ryanoasis/vim-devicons'
+ Plug 'Shatur/neovim-session-manager'
  call plug#end()
 
  " set guifont=DroidSansMono\ Nerd\ Font\ 11
