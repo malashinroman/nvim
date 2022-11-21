@@ -38,8 +38,8 @@ nmap <leader>w :w!<cr>
 nmap <leader>qq :BD<cr>
 nmap <leader>qa :bufdo bd<cr>
 nmap <leader>l :bnext<cr>
-nmap <leader>h :bprevious<cr>
 " nmap <leader>hh :bprevious<cr>
+nmap <leader>h :bprevious<cr>
 
 "disable mappings of gitgutter
 "that slows down switching buffers
